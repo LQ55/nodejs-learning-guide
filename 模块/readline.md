@@ -121,7 +121,7 @@ rl.prompt();
 init     install  
 ```
 
-## 例子：命令行工具：npmt init
+## 例子：命令行工具：npm init
 
 下面借助readline实现一个迷你版的`npm init`功能，运行脚本时，会依次要求用户输入name、version、author属性（其他略过）。
 
