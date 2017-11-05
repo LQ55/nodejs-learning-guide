@@ -427,7 +427,7 @@ grep: hello nodejs
 
 默认值：['pipe', 'pipe', 'pipe']，这意味着：
 
-1. child.stdin、child.stdout 不是`undefined`
+1. 子进程 pipe 数据至 child.stdin、child.stdout、child.stderr。
 2. 可以通过监听 `data` 事件，来获取数据。
 
 ### 基础例子
@@ -513,7 +513,7 @@ child_process.spawn('node', ['child.js'], {
 
 1. 调用`child.unref()`
 2. 设置`detached`为`true`
-3. 设置`stdio`为`ignore`（这点容易忘）
+3. 设置`stdio`为`ignore`（这点容易忘）j
 
 ```javascript
 var child_process = require('child_process');
